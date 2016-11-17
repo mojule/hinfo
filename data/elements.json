@@ -1,4 +1,4 @@
-{  
+{
   "html": {
     "content": [ "<head>", "<body>" ],
     "singular": true
@@ -14,7 +14,7 @@
     "parent": [ "<html>" ],
     "singular": true
   },
-  
+
   "title": {
     "categories": [ "metadata content" ],
     "content": [ "text" ],
@@ -39,8 +39,8 @@
     "content": [ "text" ],
     "parent": [ "<head>" ]
   },
-  
-  "address": {    
+
+  "address": {
     "categories": [ "flow content", "palpable content" ],
     "content": [ "flow content" ],
     "disallow": [ "<address>", "heading content", "sectioning content", "<header>", "<footer>" ]
@@ -99,7 +99,7 @@
     "disallow": [ "<main>" ],
     "nospec": [ "4.01" ]
   },
-  
+
   "blockquote": {
     "categories": [ "flow content", "sectioning root", "palpable content" ],
     "content": [ "flow content" ]
@@ -111,7 +111,7 @@
   },
   "div": {
     "categories": [ "flow content", "palpable content" ],
-    "content": [ "flow content" ]    
+    "content": [ "flow content" ]
   },
   "dl": {
     "categories": [ "flow content" ],
@@ -175,9 +175,9 @@
       ":not(:empty)": {
         "categories": [ "palpable content" ]
       }
-    }    
+    }
   },
-  
+
   "a": {
     "categories": [ "flow content", "phrasing content", "palpable content" ],
     "content": [ "flow content", "phrasing content" ],
@@ -313,16 +313,16 @@
     "categories": [ "flow content", "phrasing content" ],
     "nospec": [ "4.01" ]
   },
-  
+
   "area": {
     "categories": [ "flow content", "phrasing content" ],
     "ancestor": [ "<map>" ]
-  },  
+  },
   "audio": {
     "categories": [ "flow content", "phrasing content", "embedded content" ],
     "content": [ "transparent", "<track>" ],
     "disallow": [ "<audio>", "<video>" ],
-    "state": {
+    "states": {
       "[controls]": {
         "categories": [ "interactive content", "palpable content" ]
       },
@@ -331,20 +331,20 @@
       }
     },
     "nospec": [ "4.01" ]
-  },  
+  },
   "map": {
     "categories": [ "flow content", "phrasing content", "palpable content" ],
     "content": [ "transparent", "<area>" ]
-  },  
+  },
   "track": {
     "parent": [ "<audio>", "<video>" ],
     "nospec": [ "4.01" ]
-  },  
+  },
   "video": {
     "categories": [ "flow content", "phrasing content", "embedded content" ],
     "content": [ "transparent", "<track>" ],
     "disallow": [ "<audio>", "<video>" ],
-    "state": {
+    "states": {
       "[controls]": {
         "categories": [ "interactive content", "palpable content" ]
       },
@@ -353,8 +353,8 @@
       }
     },
     "nospec": [ "4.01" ]
-  },  
-  
+  },
+
   "embed": {
     "categories": [ "flow content", "phrasing content", "embedded content", "interactive content", "palpable content" ],
     "nospec": [ "4.01" ]
@@ -366,7 +366,7 @@
   },
   "img": {
     "categories": [ "flow content", "phrasing content", "embedded content", "palpable content" ],
-    "state": {
+    "states": {
       "[usemap]": {
         "categories": [ "interactive content" ]
       }
@@ -375,11 +375,11 @@
   "object": {
     "categories": [ "flow content", "phrasing content", "embedded content", "palpable content", "form-associated content", "listed", "submittable" ],
     "content": [ "transparent", "<param>" ],
-    "state": {
+    "states": {
       "[usemap]": {
         "categories": [ "interactive content" ]
       }
-    }    
+    }
   },
   "param": {
     "parent": [ "<object>" ]
@@ -389,7 +389,7 @@
     "position": [ "first" ],
     "nospec": [ "4.01" ]
   },
-  
+
   "canvas": {
     "categories": [ "flow content", "phrasing content", "embedded content", "palpable content" ],
     "content": [ "transparent" ],
@@ -398,7 +398,7 @@
   "noscript": {
     "categories": [ "flow content", "phrasing content", "metadata content" ],
     "disallow": [ "<noscript>" ],
-    "state": {
+    "states": {
       "head > noscript": {
         "content": [ "<link>", "<style>", "<meta>" ]
       },
@@ -416,8 +416,8 @@
     "content": [ "metadata content", "flow content" ],
     "parent": [ "body", "head", "colgroup" ],
     "nospec": [ "4.01" ]
-  },  
-  
+  },
+
   "del": {
     "categories": [ "flow content", "phrasing content" ],
     "content": [ "transparent" ]
@@ -426,7 +426,7 @@
     "categories": [ "flow content", "phrasing content" ],
     "content": [ "transparent" ]
   },
-  
+
   "caption": {
     "content": [ "flow content" ],
     "parent": [ "<table>" ],
@@ -435,9 +435,9 @@
   "col": {
     "parent": [ "<colgroup>" ]
   },
-  "colgroup": {    
+  "colgroup": {
     "parent": [ "<table>" ],
-    "state": {
+    "states": {
       ":not([span])": {
         "content": [ "<col>" ]
       }
@@ -471,11 +471,11 @@
     "content": [ "<th>", "<td>" ],
     "parent": [ "<table>", "<thead>", "<tbody>", "<tfoot>" ]
   },
-  
+
   "button": {
     "categories": [ "flow content", "phrasing content", "interactive content", "form-associated content", "listed", "labelable", "submittable", "palpable content" ],
     "content": [ "phrasing content" ]
-  }, 
+  },
   "datalist": {
     "categories": [ "flow content", "phrasing content" ],
     "content": [ "phrasing content", "<option>" ],
@@ -492,7 +492,7 @@
   },
   "input": {
     "categories": [ "flow content", "phrasing content", "form-associated content", "listed", "submittable", "resettable" ],
-    "state": {
+    "states": {
       ":not([type=hidden])": {
         "categories": [ "labelable", "palpable content" ]
       }
@@ -512,7 +512,7 @@
     "categories": [ "flow content", "phrasing content", "form-associated content", "labelable", "palpable content" ],
     "content": [ "phrasing content" ],
     "disallow": [ "<meter>" ],
-    "nospec": [ "4.01" ]    
+    "nospec": [ "4.01" ]
   },
   "optgroup": {
     "content": [ "<option>" ],
@@ -541,7 +541,7 @@
     "categories": [ "flow content", "phrasing content", "interactive content", "form-associated content", "listed", "labelable", "submittable", "resettable" ],
     "content": [ "text" ]
   },
-  
+
   "details": {
     "categories": [ "flow content", "sectioning root", "interactive content", "palpable content" ],
     "content": [ "<summary>", "flow content" ],
@@ -553,7 +553,7 @@
     "content": [ "flow content" ],
     "nospec": [ "4.01", "5" ],
     "experimental": true
-  },  
+  },
    "hgroup": {
     "categories": [ "flow content", "heading content", "palpable content" ],
     "content": [ "<h1>", "<h2>", "<h3>", "<h4>", "<h5>", "<h6>" ],
@@ -569,7 +569,7 @@
       },
       "[type=menu]": {
         "content": [ "<script>", "<template>", "<menu>", "<menuitem>", "<hr>" ]
-      }    
+      }
     },
     "nospec": [ "4.01", "5" ],
     "experimental": true
@@ -583,7 +583,7 @@
     "categories": [ "flow content", "phrasing content", "embedded content" ],
     "content": [ "<source>", "<img>" ],
     "nospec": [ "4.01", "5", "5.1" ],
-    "experimental": true 
+    "experimental": true
   },
   "shadow": {
     "content": [ "flow content" ],
@@ -595,5 +595,5 @@
     "parent": [ "<details>" ],
     "nospec": [ "4.01", "5" ],
     "experimental": true
-  }    
+  }
 }
