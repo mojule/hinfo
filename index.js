@@ -1,3 +1,3 @@
 'use strict'
 
-module.exports = './dist'
+module.exports = require( './dist' )
