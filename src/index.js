@@ -1,7 +1,7 @@
 'use strict'
 
 const elementData = require( '../data/elements.json' )
-const schema = require( '../data/element.schema.json' )
+const schema = require( '../schema/hinfo.schema.json' )
 
 // ensure a fresh copy, in case the consumer modifies it
 const hinfo = () => JSON.parse( JSON.stringify( elementData ) )
